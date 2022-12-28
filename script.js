@@ -1,3 +1,5 @@
+var api_key = config.API_Key;
+
 document.getElementById("convert-button").addEventListener("click",getInput);
 
 
@@ -6,7 +8,7 @@ function getInput(){
     if(x=="Python"){
         var a = document.getElementById("ip-text").value;
         const apiURL = 'https://api.openai.com/v1/edits';
-        const token = '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';
+        const token = api_key;
         var data = {
         "model": "text-davinci-edit-001",
         "input": a,
