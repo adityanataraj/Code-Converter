@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Converter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="name">
+                <h2>Code Converter</h2>
+            </div>
+            <div class="about">
+                <h5>About</h5>
+            </div>
+        </div>
+
+        <div class="workspace">
+            <div class="input-code">
+                <h4>Input Code</h4>
+                <textarea class="input-text" name="" id="ip-text" cols="" rows=""></textarea>
+                <div class="inputs">
+                    <div class="selection">
+                        <div class="select-label">Convert to</div> 
+                        <div class="select-code">
+                            <select id="code-language" name="code-language">
+                                <option id="python">Python</option>
+                                <option id="C++">C++</option>
+                                <option id="Java">Java</option>
+                                <option id="C#">C#</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="submit-button">
+                        <button id="convert-button" type="submit">Convert</button>
+                    </div>
+                </div>
+            </div>
+            <div class="output-code">
+                <h4>Output Code</h4>
+                <div class="output-area">
+                    <div id="op-text" class="output"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Powered by OpenAI
+        </div>
+    </div>
+<script src="./script.js"></script>
+</body>
+</html>
