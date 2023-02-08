@@ -1,4 +1,4 @@
-var api_key = config.API_Key;
+var api_key = config.OPENAI_API_Key;
 
 document.getElementById("convert-button").addEventListener("click",getInput);
 
@@ -35,7 +35,7 @@ function getInput(){
     else if(x=="C++"){
         var a = document.getElementById("ip-text").value;
         const apiURL = 'https://api.openai.com/v1/edits';
-        const token = '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';
+        const token = api_key;
         var data = {
         "model": "text-davinci-edit-001",
         "input": a,
@@ -62,7 +62,7 @@ function getInput(){
     else if(x=="Java"){
         var a = document.getElementById("ip-text").value;
         const apiURL = 'https://api.openai.com/v1/edits';
-        const token = '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';
+        const token = api_key;
         var data = {
         "model": "text-davinci-edit-001",
         "input": a,
@@ -89,7 +89,7 @@ function getInput(){
     else if(x=="C#"){
         var a = document.getElementById("ip-text").value;
         const apiURL = 'https://api.openai.com/v1/edits';
-        const token = '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';
+        const token = api_key;
         var data = {
         "model": "text-davinci-edit-001",
         "input": a,
