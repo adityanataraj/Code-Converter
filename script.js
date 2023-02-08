@@ -1,4 +1,6 @@
-var api_key = config.OPENAI_API_Key;
+import OPENAI_API_KEY from './config.js'
+
+var api_key = OPENAI_API_KEY;
 
 document.getElementById("convert-button").addEventListener("click",getInput);
 
