@@ -10,7 +10,7 @@ html{
 
 .navbar{
     display: flex;
-    justify-content:space-between;
+    justify-content:left;
     align-items: center;
     background: #eee;
     padding: 1rem;
